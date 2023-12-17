@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+ {
+     int a1,a2,b,c1,c2;
+     printf("Enter a1:",a1);
+     scanf("%d",&a1);
+     printf("Enter a2:",a2);
+     scanf("%d",&a2);
+     c1=0;
+     c2=0;
+     for(b=1;b<a1;b++)
+     {
+         if(a1%b==0)
+         {
+             c1=c1+b;
+         }
+     }
+     for(b=1;b<a2;b++)
+     {
+         if(a2%b==0)
+     {
+         c2=c2+b;
+     }
+     }
+     if((c1==a2) && (c2==a1))
+     {
+         printf("Amicable Numbers");
+     }
+     else 
+         printf("Not amicable numbers");
+     
+     return 0;
+ }   
